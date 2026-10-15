@@ -1,127 +1,366 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TREK Bicycle Stores | Athi River Opposite Mavuno Fertilizer</title>
-<meta name="description" content="Adult bikes KSh 6,500-8,500 Kids 3,500-4,500 Negotiable - TREK Athi River">
-<link rel="icon" type="image/png" href="logo.png">
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<style>
-  body{font-family:\'Inter\',sans-serif;background:#050A14}
-  h1,h2,h3{font-family:\'Barlow Condensed\',sans-serif}
-  .neon-cyan{color:#00E5FF;text-shadow:0 0 10px #00E5FF}
-  .neon-pink{color:#FF2A6D;text-shadow:0 0 10px #FF2A6D}
-  .neon-btn{background:linear-gradient(90deg,#00E5FF,#FF2A6D);box-shadow:0 0 20px rgba(0,229,255,0.5)}
-  .glass{background:rgba(255,255,255,0.05);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.1)}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TREK Bicycle Stores | Athi River Opposite Mavuno Fertilizer</title>
+  <meta name="description" content="Adult bikes KSh 6,500-8,500 | Kids bikes KSh 3,500-4,500 | Negotiable prices - TREK Athi River, Opposite Mavuno Fertilizer.">
+  <link rel="icon" type="image/png" href="logo.png">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body { font-family: 'Inter', sans-serif; background: #050A14; }
+    h1, h2, h3, h4 { font-family: 'Barlow Condensed', sans-serif; }
+    .neon-cyan { color: #00E5FF; text-shadow: 0 0 10px rgba(0, 229, 255, 0.7); }
+    .neon-pink { color: #FF2A6D; text-shadow: 0 0 10px rgba(255, 42, 109, 0.7); }
+    .neon-btn {
+      background: linear-gradient(90deg, #00E5FF, #FF2A6D);
+      box-shadow: 0 0 20px rgba(0, 229, 255, 0.4);
+      transition: all 0.3s ease;
+    }
+    .neon-btn:hover {
+      box-shadow: 0 0 30px rgba(255, 42, 109, 0.7);
+      transform: translateY(-2px);
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  </style>
 </head>
-<body class="text-white">
+<body class="text-white min-h-screen flex flex-col antialiased selection:bg-pink-500 selection:text-white">
 
-<div class="bg-gradient-to-r from-cyan-500 to-pink-500 text-black text-center py-2 text-xs font-black">ALL PRICES NEGOTIABLE - WHATSAPP +254 785 638 731</div>
-
-<div class="bg-black text-xs py-2 px-4 flex justify-between items-center border-b border-cyan-500/30">
-  <span><i class="fa-solid fa-location-dot text-cyan-400"></i> Athi River - Opposite Mavuno Fertilizer</span>
-  <div class="flex gap-4">
-    <a href="https://vm.tiktok.com/ZS9kLJ2fgyenf-KmMBF/" target="_blank"><i class="fa-brands fa-tiktok"></i> TikTok</a>
-    <a href="https://wa.me/254785638731" class="hidden md:block text-cyan-400 font-bold"><i class="fa-brands fa-whatsapp"></i> +254 785 638 731</a>
+  <!-- Top Announcement Bar -->
+  <div class="bg-gradient-to-r from-cyan-400 via-pink-500 to-cyan-400 text-black text-center py-2 text-xs font-black tracking-wide uppercase">
+    ALL PRICES NEGOTIABLE &bull; WHATSAPP: <a href="https://wa.me/254785638731" class="underline hover:text-white transition">+254 785 638 731</a>
   </div>
-</div>
 
-<header class="sticky top-0 z-50 bg-[#050A14]/90 backdrop-blur-md border-b border-white/10">
-  <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-    <div class="flex items-center gap-3">
-      <img src="logo.png" alt="TREK Logo" class="w-14 h-14 rounded-full border border-cyan-400 bg-black object-cover">
-      <div><h1 class="text-2xl font-black">TREK <span class="text-cyan-400">BICYCLE STORES</span></h1><p class="text-[10px] tracking-[0.3em] text-pink-500">ATHI RIVER</p></div>
+  <!-- Quick Info Bar -->
+  <div class="bg-black/90 text-xs py-2 px-4 flex justify-between items-center border-b border-cyan-500/20">
+    <span class="flex items-center gap-1.5 text-gray-300">
+      <i class="fa-solid fa-location-dot text-cyan-400"></i> Athi River &mdash; Opposite Mavuno Fertilizer
+    </span>
+    <div class="flex items-center gap-4">
+      <a href="https://vm.tiktok.com/ZS9kLJ2fgyenf-KmMBF/" target="_blank" rel="noopener noreferrer" class="hover:text-pink-400 transition flex items-center gap-1">
+        <i class="fa-brands fa-tiktok"></i> TikTok
+      </a>
+      <a href="https://wa.me/254785638731" target="_blank" rel="noopener noreferrer" class="hidden md:inline-flex items-center gap-1 text-cyan-400 font-bold hover:underline">
+        <i class="fa-brands fa-whatsapp"></i> +254 785 638 731
+      </a>
     </div>
-    <a href="https://wa.me/254785638731?text=Hi%20TREK%20Athi%20River%20I%20want%20to%20enquire" target="_blank" class="neon-btn px-6 py-3 rounded-full font-black text-sm">ENQUIRE</a>
   </div>
-</header>
 
-<section class="relative overflow-hidden">
-  <div class="absolute inset-0 bg-black/70 z-10"></div>
-  <img src="https://images.unsplash.com/photo-1541625602330-2277a4c46182?q=80&w=2070" class="absolute inset-0 w-full h-full object-cover opacity-40">
-  <div class="relative z-20 max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-8 items-center">
+  <!-- Header & Navigation -->
+  <header class="sticky top-0 z-40 bg-[#050A14]/90 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <img 
+          src="logo.png" 
+          alt="TREK Logo" 
+          class="w-12 h-12 md:w-14 md:h-14 rounded-full border border-cyan-400 bg-black object-cover"
+          onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=120&auto=format&fit=crop&q=80';"
+        >
+        <div>
+          <h1 class="text-xl md:text-2xl font-black tracking-tight leading-none">
+            TREK <span class="text-cyan-400">BICYCLE STORES</span>
+          </h1>
+          <p class="text-[10px] tracking-[0.3em] text-pink-500 font-bold mt-0.5">ATHI RIVER</p>
+        </div>
+      </div>
+      <a 
+        href="https://wa.me/254785638731?text=Hi%20TREK%20Athi%20River,%20I%20want%20to%20enquire%20about%20bicycles" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="neon-btn px-6 py-2.5 rounded-full font-black text-sm text-black tracking-wider uppercase inline-block"
+      >
+        ENQUIRE
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-black/75 z-10"></div>
+    <img 
+      src="https://images.unsplash.com/photo-1541625602330-2277a4c46182?q=80&w=2070&auto=format&fit=crop" 
+      alt="Cycling background" 
+      class="absolute inset-0 w-full h-full object-cover opacity-40"
+    >
+    <div class="relative z-20 max-w-7xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <p class="text-cyan-400 font-bold text-xs tracking-[0.4em] uppercase mb-2">100+ BICYCLES &bull; NEGOTIABLE</p>
+        <h2 class="text-6xl md:text-8xl font-black leading-none uppercase">
+          GO BY<br><span class="neon-cyan">BIKE.</span>
+        </h2>
+        
+        <div class="flex flex-wrap gap-3 mt-6">
+          <div class="glass rounded-xl px-5 py-3 text-center flex-1 min-w-[140px]">
+            <p class="text-pink-500 font-black text-lg">KSh 3,500 - 4,500</p>
+            <p class="text-xs text-gray-400 tracking-wider uppercase">KIDS BIKES</p>
+          </div>
+          <div class="glass rounded-xl px-5 py-3 text-center flex-1 min-w-[140px]">
+            <p class="text-cyan-400 font-black text-lg">KSh 6,500 - 8,500</p>
+            <p class="text-xs text-gray-400 tracking-wider uppercase">ADULT BIKES</p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-4 mt-8">
+          <a href="#bikes" class="neon-btn px-8 py-4 rounded-full font-black text-black tracking-wider">SHOP NOW</a>
+          <a 
+            href="https://vm.tiktok.com/ZS9kLJ2fgyenf-KmMBF/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="glass px-6 py-4 rounded-full font-bold hover:bg-white/10 transition inline-flex items-center gap-2"
+          >
+            <i class="fa-brands fa-tiktok text-pink-400"></i> TIKTOK
+          </a>
+        </div>
+      </div>
+
+      <div class="hidden md:block glass rounded-3xl p-4 shadow-2xl">
+        <img 
+          src="bike1.jpg" 
+          alt="Featured Mountain Bike" 
+          onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=800&auto=format&fit=crop';" 
+          class="rounded-2xl w-full h-[380px] object-cover"
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Bikes Catalog -->
+  <section id="bikes" class="bg-gray-100 text-black py-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex flex-wrap items-baseline justify-between gap-4">
+        <div>
+          <h3 class="text-4xl md:text-5xl font-black uppercase tracking-tight">
+            FEATURED <span class="text-cyan-600">BICYCLES</span> 
+            <span class="text-xs align-middle bg-pink-600 text-white font-bold px-3 py-1 rounded-full ml-2">NEGOTIABLE</span>
+          </h3>
+          <p class="text-gray-600 mt-1">Adult KSh 6,500 &ndash; 8,500 | Kids KSh 3,500 &ndash; 4,500 | Tap any bike to negotiate directly on WhatsApp</p>
+        </div>
+      </div>
+
+      <!-- Dynamic Bike Cards Grid -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10" id="bikeGrid"></div>
+    </div>
+  </section>
+
+  <!-- Store Location & WhatsApp Negotiation Form -->
+  <section id="store" class="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10">
+    <!-- Store Details & Map -->
     <div>
-      <p class="text-cyan-400 font-bold text-xs tracking-[0.4em]">100+ BICYCLES • NEGOTIABLE</p>
-      <h2 class="text-6xl md:text-8xl font-black leading-none">GO BY<br><span class="neon-cyan">BIKE.</span></h2>
-      <div class="flex gap-3 mt-6">
-        <div class="glass rounded-xl px-4 py-3 text-center"><p class="text-pink-500 font-black">KSh 3,500 - 4,500</p><p class="text-xs text-gray-400">KIDS</p></div>
-        <div class="glass rounded-xl px-4 py-3 text-center"><p class="text-cyan-400 font-black">KSh 6,500 - 8,500</p><p class="text-xs text-gray-400">ADULT</p></div>
-      </div>
-      <div class="flex gap-4 mt-6">
-        <a href="#bikes" class="neon-btn px-8 py-4 rounded-full font-black">SHOP NOW</a>
-        <a href="https://vm.tiktok.com/ZS9kLJ2fgyenf-KmMBF/" target="_blank" class="glass px-6 py-4 rounded-full font-bold">TIKTOK</a>
+      <h3 class="text-4xl font-black uppercase tracking-tight">VISIT OUR <span class="neon-cyan">STORE</span></h3>
+      <div class="glass rounded-2xl p-6 mt-6 shadow-xl">
+        <p class="text-cyan-400 font-bold text-lg">TREK BICYCLE STORES</p>
+        <p class="font-bold text-gray-200 mt-1">Athi River, Opposite Mavuno Fertilizer</p>
+        <div class="rounded-xl overflow-hidden mt-4 border border-white/10">
+          <iframe 
+            title="Google Maps Location of TREK Athi River" 
+            class="w-full h-56 border-0" 
+            src="https://maps.google.com/maps?q=Athi%20River%20Opposite%20Mavuno%20Fertilizer&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+            loading="lazy"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <a 
+          href="https://wa.me/254785638731?text=Hi%20TREK%20Athi%20River,%20please%20send%20me%20your%20exact%20live%20location" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="neon-btn block text-center py-3 rounded-full font-bold text-black mt-4 uppercase tracking-wide text-sm"
+        >
+          GET DIRECTIONS ON WHATSAPP
+        </a>
       </div>
     </div>
-    <div class="hidden md:block glass rounded-3xl p-4"><img src="bike1.jpg" onerror="this.src=\'https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=800\'" class="rounded-2xl w-full h-[380px] object-cover"></div>
-  </div>
-</section>
 
-<section id="bikes" class="bg-white text-black py-16">
-  <div class="max-w-7xl mx-auto px-4">
-    <h3 class="text-5xl font-black">FEATURED <span class="text-cyan-600">BICYCLES</span> <span class="text-xs bg-pink-600 text-white px-3 py-1 rounded-full">NEGOTIABLE</span></h3>
-    <p class="text-gray-500">Adult KSh 6,500-8,500 | Kids KSh 3,500-4,500 | Tap to negotiate</p>
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10" id="bikeGrid"></div>
-  </div>
-</section>
+    <!-- Quick Negotiation Form -->
+    <div class="glass rounded-2xl p-6 shadow-xl flex flex-col justify-between">
+      <div>
+        <h4 class="text-2xl font-black uppercase tracking-tight text-white mb-1">NEGOTIATE PRICE ON WHATSAPP</h4>
+        <p class="text-sm text-gray-400 mb-6">Send your offer directly and get an instant response from the store team.</p>
+        
+        <form onsubmit="bookRide(event)" class="space-y-4">
+          <div>
+            <label for="name" class="block text-xs uppercase tracking-wider text-gray-400 mb-1 font-semibold">Your Name</label>
+            <input 
+              id="name" 
+              type="text" 
+              placeholder="e.g. John Kamau" 
+              required 
+              class="w-full p-3 rounded-lg bg-black/60 border border-white/20 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-400 transition"
+            >
+          </div>
 
-<section id="store" class="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10">
-  <div>
-    <h3 class="text-4xl font-black">VISIT OUR <span class="neon-cyan">STORE</span></h3>
-    <div class="glass rounded-2xl p-6 mt-6">
-      <p class="text-cyan-400 font-bold">TREK BICYCLE STORES</p>
-      <p class="font-bold">Athi River, Opposite Mavuno Fertilizer</p>
-      <iframe class="w-full h-56 rounded-xl mt-4 border-0" src="https://maps.google.com/maps?q=Athi%20River%20Opposite%20Mavuno%20Fertilizer&t=&z=15&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
-      <a href="https://wa.me/254785638731" class="neon-btn block text-center py-3 rounded-full font-bold mt-4">GET DIRECTIONS ON WHATSAPP</a>
+          <div>
+            <label for="phone" class="block text-xs uppercase tracking-wider text-gray-400 mb-1 font-semibold">Phone Number</label>
+            <input 
+              id="phone" 
+              type="tel" 
+              placeholder="e.g. 0712 345 678" 
+              required 
+              class="w-full p-3 rounded-lg bg-black/60 border border-white/20 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-400 transition"
+            >
+          </div>
+
+          <div>
+            <label for="model" class="block text-xs uppercase tracking-wider text-gray-400 mb-1 font-semibold">Select Bicycle Model</label>
+            <select 
+              id="model" 
+              class="w-full p-3 rounded-lg bg-black border border-white/20 text-white focus:outline-none focus:border-cyan-400 transition"
+            >
+              <option value="SCOTT Gambler Downhill - KSh 8,500">SCOTT Gambler Downhill &mdash; KSh 8,500</option>
+              <option value="TREK Supercaliber 9.8 - KSh 8,500">TREK Supercaliber 9.8 &mdash; KSh 8,500</option>
+              <option value="SCOTT Scale Tanwall - KSh 7,500">SCOTT Scale Tanwall &mdash; KSh 7,500</option>
+              <option value="Specialized XC Custom - KSh 7,000">Specialized XC Custom &mdash; KSh 7,000</option>
+              <option value="Borace Dirt Jump 26 - KSh 6,500">Borace Dirt Jump 26 &mdash; KSh 6,500</option>
+              <option value="Kids Bike 16 inch - KSh 3,500">Kids Bike 16 inch &mdash; KSh 3,500</option>
+              <option value="Kids Bike 20/24 inch - KSh 4,500">Kids Bike 20/24 inch &mdash; KSh 4,500</option>
+            </select>
+          </div>
+
+          <button 
+            type="submit" 
+            class="neon-btn w-full py-3.5 rounded-full font-black text-black text-sm tracking-wider uppercase mt-2"
+          >
+            SEND OFFER ON WHATSAPP
+          </button>
+        </form>
+      </div>
+
+      <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between text-xs text-gray-400">
+        <span><i class="fa-solid fa-bolt text-cyan-400"></i> Fast reply on WhatsApp</span>
+        <span><i class="fa-solid fa-handshake text-pink-500"></i> Best Price Guarantee</span>
+      </div>
     </div>
-  </div>
-  <div class="glass rounded-2xl p-6">
-    <h4 class="font-bold mb-4">NEGOTIATE PRICE ON WHATSAPP</h4>
-    <form onsubmit="bookRide(event)" class="space-y-3">
-      <input id="name" placeholder="Your Name" required class="w-full p-3 rounded-lg bg-black border border-white/20">
-      <input id="phone" placeholder="Phone" required class="w-full p-3 rounded-lg bg-black border border-white/20">
-      <select id="model" class="w-full p-3 rounded-lg bg-black border border-white/20">
-        <option>SCOTT Downhill - KSh 8,500</option>
-        <option>TREK Supercaliber - KSh 8,500</option>
-        <option>SCOTT Scale - KSh 7,500</option>
-        <option>Specialized XC - KSh 7,000</option>
-        <option>Borace Dirt Jump - KSh 6,500</option>
-        <option>Kids Bike 16 inch - KSh 3,500</option>
-        <option>Kids Bike 20/24 inch - KSh 4,500</option>
-      </select>
-      <button type="submit" class="neon-btn w-full py-3 rounded-full font-black">SEND OFFER ON WHATSAPP</button>
-    </form>
-  </div>
-</section>
+  </section>
 
-<footer class="border-t border-white/10 py-6 text-center text-sm text-gray-500">© 2025 TREK Athi River | +254 785 638 731 | Prices Negotiable</footer>
-<a href="https://wa.me/254785638731" class="fixed bottom-6 right-6 bg-[#25D366] w-14 h-14 rounded-full flex items-center justify-center text-3xl"><i class="fa-brands fa-whatsapp"></i></a>
+  <!-- Footer -->
+  <footer class="mt-auto border-t border-white/10 py-8 text-center text-sm text-gray-500 bg-[#02050A]">
+    <div class="max-w-7xl mx-auto px-4 space-y-2">
+      <p class="font-bold text-gray-400">TREK BICYCLE STORES &bull; ATHI RIVER</p>
+      <p>&copy; 2025 TREK Athi River | Opposite Mavuno Fertilizer | All Prices Negotiable</p>
+      <p class="text-xs text-gray-600">Tel: +254 785 638 731</p>
+    </div>
+  </footer>
 
-<script>
-const bikes = [
-  {name:"SCOTT Gambler Downhill", cat:"Adult MTB 29 Full Suspension", price:"KSh 8,500", img:"bike1.jpg"},
-  {name:"TREK Supercaliber 9.8", cat:"Adult MTB 29 Carbon XC", price:"KSh 8,500", img:"bike2.jpg"},
-  {name:"SCOTT Scale Tanwall", cat:"Adult MTB 29 Hardtail", price:"KSh 7,500", img:"bike3.jpg"},
-  {name:"Specialized XC Custom", cat:"Adult MTB 26 Red Purple", price:"KSh 7,000", img:"bike4.jpg"},
-  {name:"Borace Dirt Jump 26", cat:"Adult Teen Street", price:"KSh 6,500", img:"bike5.jpg"},
-  {name:"Kids Bikes 16 - 24 inch", cat:"Kids Age 4-12 Years", price:"KSh 3,500 - 4,500", img:"https://images.unsplash.com/photo-1571068316344-75bc76f77890?q=80&w=600"}
-];
-const grid = document.getElementById(\'bikeGrid\');
-bikes.forEach(function(b){
-  var msg = "Hi TREK Athi River, I am interested in " + b.name + " listed at " + b.price + ". Is price negotiable? What is your best offer?";
-  grid.innerHTML += \'<div class="border rounded-2xl overflow-hidden bg-white"><img src="\'+b.img+\'" onerror="this.src=\\'https://images.unsplash.com/photo-1484156818044-c040038ed88d?q=80&w=600\\'" class="h-64 w-full object-cover"><div class="p-4"><p class="text-xs text-cyan-600 font-bold">\'+b.cat+\'</p><h4 class="font-black text-lg">\'+b.name+\'</h4><p class="font-black text-pink-600 text-xl mt-1">\'+b.price+\' <span class="text-xs text-gray-500">Negotiable</span></p><a href="https://wa.me/254785638731?text=\'+encodeURIComponent(msg)+\'" target="_blank" class="mt-3 block text-center bg-black text-white py-3 rounded-full font-bold text-sm">Negotiate on WhatsApp</a></div></div>\';
-});
-function bookRide(e){
-  e.preventDefault();
-  var name=document.getElementById(\'name\').value;
-  var phone=document.getElementById(\'phone\').value;
-  var model=document.getElementById(\'model\').value;
-  var text="Hello TREK Athi River,%0AName: "+name+"%0APhone: "+phone+"%0AI want to negotiate for: "+model;
-  window.open("https://wa.me/254785638731?text="+text,"_blank");
-}
-</script>
+  <!-- Floating WhatsApp CTA Button -->
+  <a 
+    href="https://wa.me/254785638731?text=Hi%20TREK%20Athi%20River,%20I%20am%20interested%20in%20buying%20a%20bicycle" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    aria-label="Chat with TREK Athi River on WhatsApp" 
+    class="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20ba59] text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-xl transition-all hover:scale-110 active:scale-95"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- JavaScript -->
+  <script>
+    const bikes = [
+      {
+        name: "SCOTT Gambler Downhill",
+        cat: "Adult MTB 29 Full Suspension",
+        price: "KSh 8,500",
+        img: "bike1.jpg",
+        fallback: "https://images.unsplash.com/photo-1576435728678-68d0fbf94e91?q=80&w=800&auto=format&fit=crop"
+      },
+      {
+        name: "TREK Supercaliber 9.8",
+        cat: "Adult MTB 29 Carbon XC",
+        price: "KSh 8,500",
+        img: "bike2.jpg",
+        fallback: "https://images.unsplash.com/photo-1485965120184-e220f721d03e?q=80&w=800&auto=format&fit=crop"
+      },
+      {
+        name: "SCOTT Scale Tanwall",
+        cat: "Adult MTB 29 Hardtail",
+        price: "KSh 7,500",
+        img: "bike3.jpg",
+        fallback: "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?q=80&w=800&auto=format&fit=crop"
+      },
+      {
+        name: "Specialized XC Custom",
+        cat: "Adult MTB 26 Red Purple",
+        price: "KSh 7,000",
+        img: "bike4.jpg",
+        fallback: "https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?q=80&w=800&auto=format&fit=crop"
+      },
+      {
+        name: "Borace Dirt Jump 26",
+        cat: "Adult Teen Street",
+        price: "KSh 6,500",
+        img: "bike5.jpg",
+        fallback: "https://images.unsplash.com/photo-1511994298241-608e28f14fde?q=80&w=800&auto=format&fit=crop"
+      },
+      {
+        name: "Kids Bikes 16 - 24 inch",
+        cat: "Kids Age 4-12 Years",
+        price: "KSh 3,500 - 4,500",
+        img: "https://images.unsplash.com/photo-1571068316344-75bc76f77890?q=80&w=800&auto=format&fit=crop",
+        fallback: "https://images.unsplash.com/photo-1571068316344-75bc76f77890?q=80&w=800&auto=format&fit=crop"
+      }
+    ];
+
+    const grid = document.getElementById('bikeGrid');
+
+    bikes.forEach(function(b) {
+      const msg = `Hi TREK Athi River, I am interested in ${b.name} listed at ${b.price}. Is the price negotiable? What is your best offer?`;
+      const waUrl = `https://wa.me/254785638731?text=${encodeURIComponent(msg)}`;
+
+      const card = document.createElement('div');
+      card.className = "border border-gray-200 rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-shadow flex flex-col justify-between";
+      card.innerHTML = `
+        <div>
+          <img 
+            src="${b.img}" 
+            alt="${b.name}" 
+            onerror="this.onerror=null;this.src='${b.fallback}';" 
+            class="h-60 w-full object-cover bg-gray-200"
+          >
+          <div class="p-5">
+            <p class="text-xs text-cyan-600 font-bold uppercase tracking-wider">${b.cat}</p>
+            <h4 class="font-black text-xl text-gray-900 mt-1 leading-tight">${b.name}</h4>
+            <p class="font-black text-pink-600 text-2xl mt-2">
+              ${b.price} <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Negotiable</span>
+            </p>
+          </div>
+        </div>
+        <div class="px-5 pb-5 pt-0">
+          <a 
+            href="${waUrl}" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="block text-center bg-black hover:bg-gray-800 text-white py-3 rounded-full font-bold text-sm tracking-wide transition uppercase"
+          >
+            <i class="fa-brands fa-whatsapp text-green-400 mr-1.5"></i> Negotiate on WhatsApp
+          </a>
+        </div>
+      `;
+      grid.appendChild(card);
+    });
+
+    function bookRide(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const model = document.getElementById('model').value;
+      const message = `Hello TREK Athi River,\nName: ${name}\nPhone: ${phone}\nI want to negotiate for: ${model}`;
+      
+      window.open(`https://wa.me/254785638731?text=${encodeURIComponent(message)}`, '_blank');
+    }
+  </script>
 </body>
 </html>
